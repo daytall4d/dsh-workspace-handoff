@@ -1,0 +1,52 @@
+{
+  "name": "@daytall4d/dsh-workspace-handoff",
+  "version": "0.1.0",
+  "description": "Project-local, auditable cross-session handoff tools for DeepSeek Harness.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "src",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/index.js && node --test"
+  },
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "cordis",
+    "agent",
+    "handoff",
+    "workspace"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daytall4d/dsh-workspace-handoff.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daytall4d/dsh-workspace-handoff/issues"
+  },
+  "homepage": "https://github.com/daytall4d/dsh-workspace-handoff#readme",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "icon": "./icon.svg"
+}
