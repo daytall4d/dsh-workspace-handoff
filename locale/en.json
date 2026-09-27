@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Workspace Handoff",
+    "description": "Project-local Git-aware handoffs for continuing work across Harness sessions."
+  }
+}
