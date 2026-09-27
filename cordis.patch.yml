@@ -1,0 +1,5 @@
+# DSH Profile Bundle layer.
+# This mounts one Host plugin that contributes three model-facing tools.
+- insert:
+    - id: workspace-handoff
+      name: '@daytall4d/dsh-workspace-handoff'
